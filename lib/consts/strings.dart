@@ -1,0 +1,12 @@
+const AppName = "Offer";
+const appversion = "Version 1.0.0";
+const credits = "@AshfaqMahmud";
+const email = "Email";
+const emailHint = "Enter your email";
+const pass = "Password";
+const passHint = "Enter your password";
+const fpass = "Forgot password?";
+const login = "Log In";
+const signup = "Sign Up";
+const name = "Name";
+const retypepass = "Confirm Password";
