@@ -2,11 +2,17 @@ import 'package:get/get.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:testapp/consts/consts.dart';
 import 'package:testapp/views/auth_screen/sign_up.dart';
+import 'package:testapp/views/main_views/homepage.dart';
 import 'package:testapp/widgets_common/bg_widget.dart';
-import 'package:testapp/widgets_common/custom_tField.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
+
+  changeScreen(){
+    Future.delayed(const Duration(seconds: 3),() {
+      Get.to(()=> const LoginScreen());
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return bgWidget(
@@ -67,6 +73,7 @@ class LoginScreen extends StatelessWidget {
                     // );
                     //Navigator.of(context).push(_createRoute());
                     print("Login Pressed");
+                    Navigator.push(context, PageTransition(type: PageTransitionType.bottomToTopJoined, child: HomePage(), childCurrent: this));
                   },
                 ).box.width(context.screenWidth - 60).make(),
                 15.heightBox,

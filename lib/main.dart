@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:testapp/views/main_views/homepage.dart';
 import 'package:testapp/views/splash_screen/splash_screen.dart';
+import 'package:testapp/views/splash_screen/splash_screen2.dart';
 
 /// {@macro flutter.widgets.SelectionOverlay.hideToolbar}
 void hideToolbar() => hideToolbar();
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
         )
 
       ),
-      home: const SplashScreen(),
+      home: SplashScreen2(),
     );
     //hideToolbar();
   }
